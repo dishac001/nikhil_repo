@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag dishachaudhari/docker-repo:latest
+      run: docker build . --file Dockerfile --tag dishachaudhari/Docker-git:latest
     - name: push docker image to github
-      run: docker login -u  dishachaudhari -p ${{ secrets.DOCKER_TOKEN5 }} && docker push dishachaudhari/docker-repo:latest
+      run: docker login -u  dishachaudhari -p ${{ secrets.DOCKER_TOKEN5 }} && docker push dishachaudhari/Docker-git:latest
 
